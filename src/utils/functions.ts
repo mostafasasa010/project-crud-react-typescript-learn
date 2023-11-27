@@ -12,7 +12,7 @@
  * const defaultSlicedText = txtSlicer("Lorem ipsum dolor sit amet");
  * // Result: "Lorem ipsum dolor sit amet"
  */
-export function txtSlicer(txt: string, max: number = 50) {
+export function txtSlicer(txt: string, max: number = 40) {
   if (txt.length >= max) return `${txt.slice(0, max)}...`;
   return txt;
 }
